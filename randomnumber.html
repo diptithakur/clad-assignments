@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Random NUmber</title>
+  </head>
+
+ <body>
+ 	<script>
+var num;
+ num=Math.ceil(Math.random() * 10);
+ document.write(num);
+
+ var guessnum;
+
+  guessnum=prompt("Guess the number between 1 and 10 inclusive");
+
+ if (guessnum==num)
+   
+   document.write("Matched");
+  else
+  document.write("Not matched,the number was"+guessnum);
+   
+
+
+      </script>
+  </body>
+</html>
