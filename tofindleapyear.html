@@ -1,0 +1,28 @@
+<html>
+  <head>
+     </head>
+
+     <body>
+     	 <p id="year"></p>
+    <script>
+	function leapyear(){
+		var year;
+ 
+		year = document.getElementById("year").value;
+ 
+		if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) )
+		{
+			document.write(year+" is a leap year");  
+		}
+		else
+		{
+			document.write(year+" is not a leap year");  
+		}
+	}
+     </script>
+  
+    <h4>Javascript Program to find leap year</h4>
+     <input type="text" id="year"></input>
+      <button onclick="leapyear()">Check</button>
+   </body>
+ </html>
