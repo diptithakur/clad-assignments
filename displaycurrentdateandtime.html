@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>To display currrent date and time</title>
+   </head>
+  <body>
+   <div id = "demo">
+   <h4>Write a JavaScript program to display the current day and time in the following format.Sample Output : Today is : Tuesday.Current time is : 10 PM : 30 : 38
+   </h4> 
+   </div>
+
+   <script> 
+d = new Date();
+var e = d.getDay();
+switch(e)
+{
+case 1: alert("Today is Monday");
+break;
+
+case 2: alert("Today is Tuesday");
+break;
+
+case 3: alert("Today is Wednesday");
+break;
+
+case 4: alert("Today is Thursday");
+break;
+
+case 5: alert("Today is Friday");
+break;
+
+case 6: alert("Today is Saterday");
+break;
+
+case 7: alert("Today is Sunday");
+break;
+
+default:
+alert("Day is not specified!!!");
+}
+
+var t = d.toLocaleTimeString();
+alert(t);
+
+
+
+    </script>
+  </body>
+</html>
