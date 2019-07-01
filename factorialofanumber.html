@@ -1,0 +1,32 @@
+<html>
+ <head> 
+<script>
+
+ function fact(){ 
+var i, no, fact; fact=1;
+ no=Number(document.getElementById("num").value); 
+
+ if(no>=5 & no<=10)
+{
+for(i=1; i<=no; i++) {
+ fact= fact*i;
+ } 
+
+document.getElementById("answer").value= fact;
+ }
+
+ else
+  return -1;
+
+}
+ </script> 
+</head> 
+<body>
+	<h3> enter a number between 5 and 10</h3>
+	Enter Number: <input type="number" id="num" min="5" max="10" /><button onclick="fact()">Calculate</button><input id="answer">
+	
+	<div id="answer"></div>
+ 
+
+</body> 
+</html>
